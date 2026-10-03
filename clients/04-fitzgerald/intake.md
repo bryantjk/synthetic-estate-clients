@@ -2,9 +2,9 @@
 
 **Profile 4 / Fitzgerald**
 **Source:** Online intake form returned by client after initial interview, plus a follow-up email reporting what he found in his filing cabinet (the 2005 trust, the divorce judgment, the QDRO) and what each account custodian told him about beneficiary designations.
-**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `client_interviews/clean_transcripts/transcript_04_fitzgerald.md` and `client_interviews/answer_keys/answer_key_04_fitzgerald.md`, this represents the complete data set the documents should reflect.
+**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `interview/transcript-dialogue-only.md` and `interview/answer-key.md`, this represents the complete data set the documents should reflect.
 
-> **Convention.** Values that appear in the transcript are repeated here for one-stop reference. Values that did **not** appear in the transcript and were synthesized for testing are tagged `[SYNTH]` so they can be edited or replaced. Values settled by an approved attorney decision (`backend/tools/answer_keys/fitzgerald.py`, `DECISIONS`, approved by Julian 2026-09-05) are tagged `decision`. Phone numbers use the 555 exchange with the local area code: (858) La Jolla, (619) San Diego, (303) Denver, (617) Boston. Addresses and account details are fabricated and should not match real persons or institutions.
+> **Convention.** Values that appear in the transcript are repeated here for one-stop reference. Values that did **not** appear in the transcript and were synthesized for testing are tagged `[SYNTH]` so they can be edited or replaced. Values settled by an approved attorney decision (the originating project's typed answer key (not included here), `DECISIONS`, approved by Julian 2026-09-05) are tagged `decision`. Phone numbers use the 555 exchange with the local area code: (858) La Jolla, (619) San Diego, (303) Denver, (617) Boston. Addresses and account details are fabricated and should not match real persons or institutions.
 
 ---
 

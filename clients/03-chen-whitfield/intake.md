@@ -2,7 +2,7 @@
 
 **Profile 3 / Chen-Whitfield**
 **Source:** Online intake form returned jointly by both clients after the initial interview, plus a follow-up email from Sandra answering the beneficiary-designation homework (the IRA and the Fidelity account) and the loose ends the attorney listed.
-**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `client_interviews/clean_transcripts/transcript_03_chen_whitfield.md`, `client_interviews/answer_keys/answer_key_03_chen_whitfield.md` and the attorney's approved decisions in `backend/tools/answer_keys/chen_whitfield.py`, this represents the complete data set the documents should reflect.
+**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `interview/transcript-dialogue-only.md`, `interview/answer-key.md` and the attorney's approved decisions in the originating project's typed answer key (not included here), this represents the complete data set the documents should reflect.
 
 > **Convention.** Values that appear in the transcript are repeated here for one-stop reference. Values that did **not** appear in the transcript and were synthesized for testing are tagged `[SYNTH]` so they can be edited or replaced. Values taken from the attorney's approved decisions are tagged `decision`. Phone numbers use the 555 exchange with each person's local area code. Addresses and account details are fabricated and should not match real persons or institutions. The charities are named as the clients named them; their exact legal names and tax identification numbers are for the firm to confirm and are deliberately not invented here.
 

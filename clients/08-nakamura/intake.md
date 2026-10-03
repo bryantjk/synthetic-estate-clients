@@ -2,9 +2,9 @@
 
 **Profile 8 / Nakamura**
 **Source:** Online intake form returned by both clients after the initial interview, plus a follow-up email from George (copied to Patricia) answering the open items and confirming current beneficiary designations.
-**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `client_interviews/clean_transcripts/transcript_08_nakamura.md` and `client_interviews/answer_keys/answer_key_08_nakamura.md`, this represents the complete data set the documents should reflect.
+**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `interview/transcript-dialogue-only.md` and `interview/answer-key.md`, this represents the complete data set the documents should reflect.
 
-> **Convention.** Values that appear in the transcript are repeated here for one-stop reference. Values that did **not** appear in the transcript and were synthesized for testing are tagged `[SYNTH]` so they can be edited or replaced. `decision` marks a value settled by one of the attorney's approved decisions (`backend/tools/answer_keys/nakamura.py`, approved 2026-09-05). Phone numbers use the 555 exchange with the area code of the city named. Addresses, account numbers and identifiers are fabricated and should not match real persons or institutions. The four charities are named by the clients; their exact legal names and tax identification numbers are deliberately **not** fabricated and must be confirmed before any beneficiary designation is signed.
+> **Convention.** Values that appear in the transcript are repeated here for one-stop reference. Values that did **not** appear in the transcript and were synthesized for testing are tagged `[SYNTH]` so they can be edited or replaced. `decision` marks a value settled by one of the attorney's approved decisions (the originating project's typed answer key (not included here), approved 2026-09-05). Phone numbers use the 555 exchange with the area code of the city named. Addresses, account numbers and identifiers are fabricated and should not match real persons or institutions. The four charities are named by the clients; their exact legal names and tax identification numbers are deliberately **not** fabricated and must be confirmed before any beneficiary designation is signed.
 
 ---
 

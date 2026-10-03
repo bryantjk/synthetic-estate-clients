@@ -2,9 +2,9 @@
 
 **Profile 5 / Williams-Park**
 **Source:** Online intake form returned by both clients after the initial interview, plus a follow-up email from Andre confirming his SEP IRA beneficiary and the restaurant's details.
-**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `client_interviews/clean_transcripts/transcript_05_williams_park.md` and `client_interviews/answer_keys/answer_key_05_williams_park.md`, this represents the complete data set the documents should reflect.
+**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `interview/transcript-dialogue-only.md` and `interview/answer-key.md`, this represents the complete data set the documents should reflect.
 
-> **Convention.** Values that appear in the transcript are repeated here for one-stop reference. Values that did **not** appear in the transcript and were synthesized for testing are tagged `[SYNTH]` so they can be edited or replaced. `decision` marks a value settled by an approved attorney decision (`backend/tools/answer_keys/williams_park.py`). Phone numbers use the 555 exchange. Addresses, account details and charity identifiers are fabricated and should not match real persons or institutions.
+> **Convention.** Values that appear in the transcript are repeated here for one-stop reference. Values that did **not** appear in the transcript and were synthesized for testing are tagged `[SYNTH]` so they can be edited or replaced. `decision` marks a value settled by an approved attorney decision (the originating project's typed answer key (not included here)). Phone numbers use the 555 exchange. Addresses, account details and charity identifiers are fabricated and should not match real persons or institutions.
 
 ---
 
@@ -224,7 +224,7 @@ Note: two principals, so every personal document is duplicated per spouse (unlik
 Before this file is treated as ground truth for an attorney-agent run, please review and adjust the following items:
 
 - [ ] All `[SYNTH]` names, addresses, phones, emails, DOBs, SSNs, account numbers, VINs and microchip numbers.
-- [x] **The approved residue decision's charities, corrected.** `design.residue_after_the_survivor` in `backend/tools/answer_keys/williams_park.py` had named Delacroix's charities; on 2026-09-23 the attorney ruled it should match the transcript, and it now names The Trevor Project and the scholarship fund, with the shares unchanged (25/25/10/40).
+- [x] **The approved residue decision's charities, corrected.** `design.residue_after_the_survivor` in the originating project's typed answer key (not included here) had named Delacroix's charities; on 2026-09-23 the attorney ruled it should match the transcript, and it now names The Trevor Project and the scholarship fund, with the shares unchanged (25/25/10/40).
 - [ ] **Scholarship fund's name** (§6): "Pride Futures Scholarship Fund" is invented; the transcript says only a local scholarship fund for LGBTQ youth run through a community foundation.
 - [ ] **SEP IRA beneficiary follow-up** (§3): resolved as "currently Lisa, 100%, since 2015", changing to Marcus then the trust. [SYNTH resolution of an answer-key flag.]
 - [ ] **401(k) beneficiary follow-up** (§3): resolved as "Andre primary, no contingent". [SYNTH resolution]

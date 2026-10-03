@@ -2,9 +2,9 @@
 
 **Profile 6 / Johansson**
 **Source:** Online intake form returned by client after initial interview, plus a follow-up email sent after she located the 2015 trust binder and the Coronado deed in Erik's filing cabinet.
-**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `client_interviews/clean_transcripts/transcript_06_johansson.md` and `client_interviews/answer_keys/answer_key_06_johansson.md`, this represents the complete data set the documents should reflect.
+**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `interview/transcript-dialogue-only.md` and `interview/answer-key.md`, this represents the complete data set the documents should reflect.
 
-> **Convention.** Values that appear in the transcript are repeated here for one-stop reference. Values that did **not** appear in the transcript and were synthesized for testing are tagged `[SYNTH]` so they can be edited or replaced. `decision` marks a value settled by an approved attorney decision on the client's card (`backend/tools/answer_keys/johansson.py`). Phone numbers use the 555 exchange with the local area code ((619) for Coronado, (206) for Seattle). Addresses and account details are fabricated and should not match real persons or institutions.
+> **Convention.** Values that appear in the transcript are repeated here for one-stop reference. Values that did **not** appear in the transcript and were synthesized for testing are tagged `[SYNTH]` so they can be edited or replaced. `decision` marks a value settled by an approved attorney decision on the client's card (the originating project's typed answer key (not included here)). Phone numbers use the 555 exchange with the local area code ((619) for Coronado, (206) for Seattle). Addresses and account details are fabricated and should not match real persons or institutions.
 
 ---
 

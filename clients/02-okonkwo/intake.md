@@ -2,9 +2,9 @@
 
 **Profile 2 / Okonkwo**
 **Source:** Online intake form returned by both clients after the initial interview, plus a follow-up email (from Priya, copying James) reporting what they found when they checked the six beneficiary designations the attorney put on their homework list.
-**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `client_interviews/clean_transcripts/transcript_02_okonkwo.md` and `client_interviews/answer_keys/answer_key_02_okonkwo.md`, this represents the complete data set the documents should reflect.
+**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `interview/transcript-dialogue-only.md` and `interview/answer-key.md`, this represents the complete data set the documents should reflect.
 
-> **Convention.** Values that appear in the transcript are repeated here for one-stop reference. Values that did **not** appear in the transcript and were synthesized for testing are tagged `[SYNTH]` so they can be edited or replaced. `decision` marks a value settled by the attorney's approved decision in `backend/tools/answer_keys/okonkwo.py`. Phone numbers use the 555 exchange with the local area code: (858) Carmel Valley, (408) San Jose, (404) Atlanta. Addresses and account details are fabricated and should not match real persons or institutions.
+> **Convention.** Values that appear in the transcript are repeated here for one-stop reference. Values that did **not** appear in the transcript and were synthesized for testing are tagged `[SYNTH]` so they can be edited or replaced. `decision` marks a value settled by the attorney's approved decision in the originating project's typed answer key (not included here). Phone numbers use the 555 exchange with the local area code: (858) Carmel Valley, (408) San Jose, (404) Atlanta. Addresses and account details are fabricated and should not match real persons or institutions.
 
 ---
 

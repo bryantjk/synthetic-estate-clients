@@ -2,9 +2,9 @@
 
 **Profile 7 / Reyes**
 **Source:** Online intake form returned by client after initial interview, plus follow-up email confirming the health-care agent, the 401(k) designation and the stock-option paperwork.
-**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `client_interviews/clean_transcripts/transcript_07_reyes.md` and `client_interviews/answer_keys/answer_key_07_reyes.md`, this represents the complete data set the documents should reflect.
+**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `interview/transcript-dialogue-only.md` and `interview/answer-key.md`, this represents the complete data set the documents should reflect.
 
-> **Convention.** Values that appear in the transcript are repeated here for one-stop reference. Values that did **not** appear in the transcript and were synthesized for testing are tagged `[SYNTH]` so they can be edited or replaced. `profile` means the value comes from the client profile the voice agent plays (`backend/agent/profiles/client_profiles.md`, Profile 7); `inferred` means it follows from the transcript without being said. Phone numbers use the (619) 555-XXXX reservation. Addresses and account details are fabricated and should not match real persons or institutions. Ash Taylor is nonbinary and uses they/them pronouns; every reference below does the same, and so must every document.
+> **Convention.** Values that appear in the transcript are repeated here for one-stop reference. Values that did **not** appear in the transcript and were synthesized for testing are tagged `[SYNTH]` so they can be edited or replaced. `profile` means the value comes from the client profile the voice agent plays (`profile.md`, Profile 7); `inferred` means it follows from the transcript without being said. Phone numbers use the (619) 555-XXXX reservation. Addresses and account details are fabricated and should not match real persons or institutions. Ash Taylor is nonbinary and uses they/them pronouns; every reference below does the same, and so must every document.
 
 ---
 
@@ -189,4 +189,4 @@ Before this file is treated as ground truth for an attorney-agent run, please re
 - [ ] Group-term life insurance of $50,000 naming Gloria (§3) [SYNTH]; delete if the test should hold only the transcript's assets.
 - [ ] Father's name and date of death (§2) [SYNTH].
 - [ ] **Profile vs transcript:** the profile calls Ash Tomás's "girlfriend"; the transcript says "partner" and they/them throughout. This file follows the transcript. The profile's "Orientation" line is not recorded here; it is not an intake fact.
-- [ ] **Attorney decisions:** none. `backend/tools/answer_keys/reyes.py` has an empty `DECISIONS`, and `docs/plans/client_decisions_proposal.md` proposes none for Reyes; nothing in this file stands in for one.
+- [ ] **Attorney decisions:** none. the originating project's typed answer key (not included here) has an empty `DECISIONS`, and `docs/plans/client_decisions_proposal.md` proposes none for Reyes; nothing in this file stands in for one.
