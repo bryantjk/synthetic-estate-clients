@@ -1,0 +1,72 @@
+{
+  "profile_name": "Raymond 'Ray' Delacroix",
+  "people": [
+    {"name": "Raymond Delacroix", "aliases": ["Ray"], "relationship": "principal", "details": "Age 74, retired librarian, uses preferred name Ray", "roles": ["principal"]},
+    {"name": "Walter Hartman", "aliases": ["Walter"], "relationship": "partner", "details": "Deceased 2018, stomach cancer, together 28 years. Died without estate plan — conservatorship fight with his estranged family.", "roles": []},
+    {"name": "Gerald Delacroix", "aliases": [], "relationship": "sibling", "details": "Age 78, brother, in memory care facility, advanced dementia", "roles": []},
+    {"name": "Paul Delacroix", "aliases": [], "relationship": "other_relative", "details": "Age 50, nephew, lives in Houston", "roles": ["beneficiary"]},
+    {"name": "Marie Delacroix-Tran", "aliases": [], "relationship": "other_relative", "details": "Age 47, niece, lives in Baton Rouge", "roles": ["beneficiary"]},
+    {"name": "Evelyn Marsh", "aliases": ["Evelyn"], "relationship": "friend", "details": "Age 71, closest friend, explicitly declined trustee/agent roles but accepted trust protector (lighter responsibility)", "roles": ["trust_protector", "beneficiary"]},
+    {"name": "Joseph Kim", "aliases": ["Joseph"], "relationship": "neighbor", "details": "Age 45, neighbor, declined any legal responsibility but willing to care for cat", "roles": ["pet_caretaker", "beneficiary"]},
+    {"name": "Professional Fiduciary (to be named)", "aliases": [], "relationship": "professional", "details": "Professional fiduciary placeholder — not yet identified, requires compensation provisions and replacement mechanism", "roles": ["trustee", "executor", "agent"]},
+    {"name": "Cleo", "aliases": [], "relationship": "other", "details": "Cat, age 9", "roles": ["pet_trust_beneficiary"]}
+  ],
+  "assets": [
+    {"description": "Bankers Hill Condo", "type": "real_property", "value": 580000, "beneficiary_status": null, "notes": "Free and clear, no mortgage. Needs titling into trust."},
+    {"description": "Traditional IRA", "type": "retirement_account", "value": 420000, "beneficiary_status": "needs_updating", "notes": "FLAG: Beneficiary almost certainly lists Walter Hartman (deceased 2018). No contingent beneficiary. URGENT — most critical action item."},
+    {"description": "CalPERS Pension", "type": "retirement_account", "value_monthly": 4100, "beneficiary_status": null, "notes": "Monthly pension payments."},
+    {"description": "Social Security", "type": "income", "value_monthly": 2800, "beneficiary_status": null, "notes": "Monthly benefit."},
+    {"description": "SD County Credit Union Savings", "type": "financial_account", "value": 95000, "beneficiary_status": null, "notes": "No POD designation."},
+    {"description": "Schwab Brokerage", "type": "financial_account", "value": 185000, "beneficiary_status": null, "notes": "No TOD designation."},
+    {"description": "2019 Toyota Camry", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": null},
+    {"description": "Rare Book Collection", "type": "personal_property", "value": 15000, "beneficiary_status": null, "notes": "Specific bequest to SD Public Library as the 'Delacroix-Hartman Collection.'"},
+    {"description": "Walter's Paintings", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": "Specific bequest to SD Public Library for display."}
+  ],
+  "distributions": [
+    {"type": "specific_bequest", "beneficiary": "SD Public Library", "amount": "Walter's paintings for display"},
+    {"type": "specific_bequest", "beneficiary": "SD Public Library", "amount": "Rare book collection as 'Delacroix-Hartman Collection' (conditional on library agreement)"},
+    {"type": "pet_trust", "beneficiary": "Cleo", "amount": "$15,000"},
+    {"type": "specific_bequest", "beneficiary": "Paul Delacroix", "amount": "$10,000"},
+    {"type": "specific_bequest", "beneficiary": "Marie Delacroix-Tran", "amount": "$10,000"},
+    {"type": "specific_bequest", "beneficiary": "Evelyn Marsh", "amount": "$10,000"},
+    {"type": "specific_bequest", "beneficiary": "Joseph Kim", "amount": "$5,000"},
+    {"type": "residuary", "beneficiary": "SD LGBT Community Center", "amount": "50% of remainder"},
+    {"type": "residuary", "beneficiary": "SD Public Library Foundation", "amount": "30% of remainder"},
+    {"type": "residuary", "beneficiary": "Walter Hartman AIDS Memorial Fund", "amount": "20% of remainder"}
+  ],
+  "fiduciary_designations": {
+    "trustee": {"primary": "Professional fiduciary (to be named)", "successor": null},
+    "executor": {"primary": "Professional fiduciary (to be named)"},
+    "trust_protector": {"primary": "Evelyn Marsh", "backup": "Executive Director, SD LGBT Community Center (institutional)"},
+    "dpoa_agent": {"primary": "Professional fiduciary (to be named)", "successor": null},
+    "dpoa_type": "springing",
+    "dpoa_scope": "financial and healthcare"
+  },
+  "prior_legal_flags": [
+    {"item": "No prior estate documents", "flag": "No will, trust, or any prior planning documents whatsoever", "confidence_expected": "high"},
+    {"item": "Walter's death and conservatorship", "flag": "Walter died 2018 with no estate plan — conservatorship fight with his estranged family. Motivating event for Ray's planning.", "confidence_expected": "high"},
+    {"item": "IRA beneficiary", "flag": "Almost certainly lists Walter Hartman (deceased 2018), no contingent beneficiary. URGENT — most critical flag.", "confidence_expected": "low"},
+    {"item": "Credit Union savings", "flag": "No POD designation", "confidence_expected": "low"},
+    {"item": "Schwab brokerage", "flag": "No TOD designation", "confidence_expected": "low"},
+    {"item": "Condo", "flag": "No transfer-on-death deed — needs titling into trust", "confidence_expected": "low"}
+  ],
+  "special_provisions": [
+    {"category": "professional_fiduciary", "description": "Professional fiduciary (to be named) serves as trustee, executor, and DPOA agent. Requires compensation provisions and replacement mechanism."},
+    {"category": "trust_protector", "description": "Evelyn Marsh as trust protector (distinct from trustee). Institutional backup: Executive Director of SD LGBT Community Center (position, not person)."},
+    {"category": "named_collection_bequest", "description": "Rare books to SD Public Library as 'Delacroix-Hartman Collection' — conditional on library agreement to maintain as named collection."},
+    {"category": "pet_trust", "description": "$15,000 for Cleo (cat), Joseph Kim primary caretaker, San Diego Humane Society backup."},
+    {"category": "disposition_of_remains", "description": "Cremation. Primary: Balboa Park botanical garden. Fallback: Greenwood Memorial Park."},
+    {"category": "charitable_giving", "description": "Majority of estate to three charities: 50% SD LGBT Community Center, 30% SD Public Library Foundation, 20% Walter Hartman AIDS Memorial Fund."}
+  ],
+  "critical_tests": {
+    "walter_surname_late": "Walter's last name Hartman only appears with the named collection bequest — system must handle delayed surname revelation",
+    "professional_fiduciary_placeholder": "Professional fiduciary is 'to be named' — not a real person, must be handled as a placeholder requiring future action",
+    "trust_protector_concept": "Trust protector is a distinct role from trustee — system must not conflate them",
+    "institutional_backup": "Backup trust protector is an institutional position (Executive Director of SD LGBT Center), not a named person",
+    "ira_deceased_beneficiary_urgent": "IRA beneficiary is almost certainly Walter who died in 2018 — this is the most urgent flag in the entire profile",
+    "evelyn_declined_fiduciary": "Evelyn explicitly declined trustee/agent roles but accepted trust protector as a lighter responsibility",
+    "joseph_declined_legal": "Joseph declined any legal responsibility but is willing to take the cat — pet caretaker only",
+    "named_collection_conditional": "Delacroix-Hartman Collection bequest is conditional on library agreeing to maintain it as a named collection",
+    "two_body_disposition_options": "Primary wish is Balboa Park botanical garden, fallback is Greenwood Memorial Park — two options, not one"
+  }
+}

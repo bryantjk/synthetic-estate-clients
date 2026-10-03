@@ -1,0 +1,57 @@
+{
+  "profile_name": "James & Priya Okonkwo",
+  "people": [
+    {"name": "James Okonkwo", "aliases": ["James"], "relationship": "principal", "details": "Age 41, co-principal", "roles": ["principal"]},
+    {"name": "Priya Okonkwo", "aliases": ["Priya"], "relationship": "principal", "details": "Age 39, pediatrician, co-principal", "roles": ["principal"]},
+    {"name": "Zara Okonkwo", "aliases": ["Zara"], "relationship": "child", "details": "Daughter, age 8", "roles": ["beneficiary"]},
+    {"name": "Kiran Okonkwo", "aliases": ["Kiran"], "relationship": "child", "details": "Son, age 5", "roles": ["beneficiary"]},
+    {"name": "James's parents", "aliases": [], "relationship": "parent", "details": "Living, in their 70s, Atlanta GA", "roles": []},
+    {"name": "Adaeze Okonkwo", "aliases": ["Ada", "Auntie Ada"], "relationship": "sibling", "details": "James's sister, age 38, Atlanta", "roles": ["guardian", "successor_trustee", "successor_agent", "pet_caretaker"]},
+    {"name": "Ravi", "aliases": [], "relationship": "sibling", "details": "Priya's brother, age 43, San Jose", "roles": ["guardian", "trustee", "successor_agent"]},
+    {"name": "Meena", "aliases": [], "relationship": "in_law", "details": "Ravi's wife", "roles": ["guardian"]},
+    {"name": "Biscuit", "aliases": [], "relationship": "other", "details": "Golden retriever, age 3", "roles": ["pet_trust_beneficiary"]}
+  ],
+  "assets": [
+    {"description": "Primary Residence Carmel Valley", "type": "real_property", "value": 1200000, "mortgage": 650000, "beneficiary_status": null, "notes": null},
+    {"description": "James 401(k) Qualcomm", "type": "retirement_account", "value": 420000, "beneficiary_status": "needs_updating", "notes": "Believed to be Priya."},
+    {"description": "Priya SEP IRA", "type": "retirement_account", "value": 310000, "beneficiary_status": "needs_updating", "notes": "Believed to be James."},
+    {"description": "Joint Savings Wells Fargo", "type": "financial_account", "value": 95000, "beneficiary_status": null, "notes": null},
+    {"description": "Joint Brokerage Schwab", "type": "financial_account", "value": 180000, "beneficiary_status": null, "notes": null},
+    {"description": "529 Plan Zara", "type": "financial_account", "value": 35000, "beneficiary_status": "unknown", "notes": "Successor beneficiary designation needs verification."},
+    {"description": "529 Plan Kiran", "type": "financial_account", "value": 35000, "beneficiary_status": "unknown", "notes": "Successor beneficiary designation needs verification."},
+    {"description": "Life Insurance James $1M Northwestern Mutual", "type": "life_insurance", "value_face": 1000000, "beneficiary_status": "needs_updating", "notes": "Beneficiary needs verification."},
+    {"description": "Life Insurance Priya $750K Northwestern Mutual", "type": "life_insurance", "value_face": 750000, "beneficiary_status": "needs_updating", "notes": "Beneficiary needs verification."},
+    {"description": "Tesla Model Y", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": null},
+    {"description": "BMW X3", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": null},
+    {"description": "Priya's pediatric practice", "type": "other", "value": null, "beneficiary_status": null, "notes": "Sole proprietorship — NOT a distributable asset."}
+  ],
+  "distributions": [
+    {"type": "residuary", "beneficiary": "Surviving spouse", "amount": "Everything to surviving spouse"},
+    {"type": "residuary", "beneficiary": "Zara and Kiran", "amount": "If both passed: everything in trust equally until age 28"},
+    {"type": "pet_trust", "beneficiary": "Biscuit", "amount": "$15,000"}
+  ],
+  "fiduciary_designations": {
+    "guardian": {"primary": "Ravi and Meena", "successor": "Adaeze"},
+    "trustee": {"primary": "Surviving spouse", "successor": "Ravi", "second_successor": "Adaeze"},
+    "james_dpoa_agent": {"primary": "Priya", "successor": "Adaeze"},
+    "priya_dpoa_agent": {"primary": "James", "successor": "Ravi"},
+    "dpoa_type": "springing"
+  },
+  "prior_legal_flags": [
+    {"item": "Life insurance beneficiaries", "flag": "Need verification for both James and Priya policies", "confidence_expected": "low"},
+    {"item": "401(k) and SEP IRA beneficiaries", "flag": "Need verification — believed to be each other", "confidence_expected": "low"},
+    {"item": "529 successor beneficiary designations", "flag": "Need verification", "confidence_expected": "low"}
+  ],
+  "special_provisions": [
+    {"category": "pet_trust", "description": "$15,000 for Biscuit, Ravi family caretaker, Adaeze backup"},
+    {"category": "disposition_of_remains", "description": "No strong preference"}
+  ],
+  "critical_tests": {
+    "ada_name_resolution": "Adaeze / Ada / Auntie Ada are the same person — must resolve correctly",
+    "cross_cultural_names": "Nigerian and Indian names handled correctly throughout",
+    "straightforward_no_overcomplicate": "Clean plan should not invent complexity where none exists",
+    "distribution_age_28": "Specifically age 28, not 25 or 30",
+    "529_late_addition": "529 plans raised at end of interview by James",
+    "practice_not_asset": "Priya's pediatric practice is NOT a distributable asset"
+  }
+}

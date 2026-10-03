@@ -1,0 +1,46 @@
+{
+  "profile_name": "Maria Elena Vega",
+  "people": [
+    {"name": "Maria Elena Vega", "aliases": ["Maria"], "relationship": "principal", "details": "Age 38, single mother of two", "roles": ["principal"]},
+    {"name": "Diego Vega", "aliases": ["Diego"], "relationship": "child", "details": "Son, age 7", "roles": ["beneficiary"]},
+    {"name": "Sofia Vega", "aliases": ["Sofia"], "relationship": "child", "details": "Daughter, age 4", "roles": ["beneficiary"]},
+    {"name": "Rosa Vega", "aliases": ["Rosa"], "relationship": "parent", "details": "Mother, age 67", "roles": ["guardian", "agent"]},
+    {"name": "Carlos Vega", "aliases": ["Carlos"], "relationship": "sibling", "details": "Brother, age 42, married to Ana", "roles": ["trustee", "guardian", "successor_agent"]},
+    {"name": "Ana", "aliases": [], "relationship": "in_law", "details": "Carlos's wife, no last name given", "roles": ["guardian"]},
+    {"name": "Jennifer Park", "aliases": ["Jennifer"], "relationship": "other", "details": "Best friend, financial planner", "roles": ["successor_trustee"]},
+    {"name": "Children's father", "aliases": [], "relationship": "other", "details": "Unnamed, explicitly excluded from planning", "roles": []},
+    {"name": "Abuela", "aliases": [], "relationship": "other_relative", "details": "Deceased grandmother", "roles": []}
+  ],
+  "assets": [
+    {"description": "Chase Savings", "type": "financial_account", "value": 45000, "beneficiary_status": null, "notes": null},
+    {"description": "403(b) UCSD Health", "type": "retirement_account", "value": 185000, "beneficiary_status": "unknown", "notes": "Beneficiary unknown."},
+    {"description": "Term Life Insurance $500K UCSD Health", "type": "life_insurance", "value_face": 500000, "beneficiary_status": "needs_updating", "notes": "Probably Rosa but unsure — 'I think' level confidence."},
+    {"description": "2021 Honda CR-V", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": null},
+    {"description": "Grandmother's jewelry", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": "Sentimental heirloom from Abuela. Specifically bequeathed to Sofia."}
+  ],
+  "distributions": [
+    {"type": "specific_bequest", "beneficiary": "Sofia", "amount": "Grandmother's jewelry"},
+    {"type": "residuary", "beneficiary": "Diego and Sofia", "amount": "Equal split in trust until age 25, trustee discretion for HEMS before 25"}
+  ],
+  "fiduciary_designations": {
+    "guardian": {"primary": "Rosa", "successor": "Carlos and Ana"},
+    "trustee": {"primary": "Carlos", "successor": "Jennifer Park"},
+    "dpoa_agent": {"primary": "Rosa", "successor": "Carlos"},
+    "dpoa_type": "springing"
+  },
+  "prior_legal_flags": [
+    {"item": "Life insurance beneficiary", "flag": "Unknown — Maria thinks Rosa but unsure", "confidence_expected": "low"},
+    {"item": "403(b) beneficiary", "flag": "Unknown — 'I have no idea'", "confidence_expected": "low"}
+  ],
+  "special_provisions": [
+    {"category": "disposition_of_remains", "description": "Cremation, no elaborate funeral"},
+    {"category": "father_exclusion", "description": "Children's father unnamed and explicitly excluded from planning"}
+  ],
+  "critical_tests": {
+    "guardian_trustee_distinct": "Rosa is guardian, Carlos is trustee — must NOT be conflated",
+    "jennifer_name_resolution": "Jennifer mentioned first by first name only, Park comes later — must resolve to one person",
+    "father_exclusion": "Unnamed father explicitly excluded from planning",
+    "jewelry_from_joke": "Bequest emerges from humorous exchange during interview",
+    "beneficiary_uncertainty_levels": "Life insurance 'I think' vs 403(b) 'I have no idea' — different confidence levels"
+  }
+}

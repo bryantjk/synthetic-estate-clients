@@ -1,0 +1,63 @@
+{
+  "profile_name": "Marcus Williams & Andre Park",
+  "people": [
+    {"name": "Marcus Williams", "aliases": ["Marcus"], "relationship": "principal", "details": "Age 44, architect, co-principal, married 2017", "roles": ["principal"]},
+    {"name": "Andre Park", "aliases": ["Andre"], "relationship": "principal", "details": "Age 47, restaurant owner (The Porch), co-principal, married 2017", "roles": ["principal"]},
+    {"name": "Helen Williams", "aliases": ["Helen"], "relationship": "parent", "details": "Marcus's mother, age 72, lives in San Diego", "roles": ["beneficiary"]},
+    {"name": "Denise Williams", "aliases": ["Denise"], "relationship": "sibling", "details": "Marcus's sister, age 40, Sacramento", "roles": ["beneficiary", "successor_trustee", "successor_agent", "pet_caretaker"]},
+    {"name": "Lisa Nakamura", "aliases": ["Lisa"], "relationship": "other", "details": "Andre's best friend / chosen family, age 49, San Diego", "roles": ["beneficiary", "successor_trustee", "successor_agent", "pet_caretaker"]},
+    {"name": "Miguel Reyes", "aliases": ["Miguel"], "relationship": "other", "details": "Sous chef at The Porch", "roles": ["beneficiary"]},
+    {"name": "Andre's biological family", "aliases": [], "relationship": "other", "details": "Estranged 13+ years, explicitly excluded", "roles": []},
+    {"name": "Bowie", "aliases": [], "relationship": "other", "details": "Dog, age 5", "roles": ["pet_trust_beneficiary"]},
+    {"name": "Prince", "aliases": [], "relationship": "other", "details": "Dog, age 4", "roles": ["pet_trust_beneficiary"]}
+  ],
+  "assets": [
+    {"description": "Townhouse Mission Hills", "type": "real_property", "value": 950000, "mortgage": 320000, "beneficiary_status": null, "notes": null},
+    {"description": "The Porch Restaurant", "type": "business", "value": 180000, "beneficiary_status": null, "notes": "Sole proprietorship. No operating agreement — business continuity risk."},
+    {"description": "Marcus 401(k)", "type": "retirement_account", "value": 390000, "beneficiary_status": "needs_updating", "notes": "Believed to be Andre."},
+    {"description": "Andre SEP IRA", "type": "retirement_account", "value": 85000, "beneficiary_status": "unknown", "notes": "FLAG: Might be Lisa from pre-marriage."},
+    {"description": "Joint Savings", "type": "financial_account", "value": 60000, "beneficiary_status": null, "notes": null},
+    {"description": "Marcus Brokerage Vanguard", "type": "financial_account", "value": 150000, "beneficiary_status": null, "notes": null},
+    {"description": "Jeep Wrangler", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": null},
+    {"description": "Toyota Tacoma", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": null}
+  ],
+  "distributions": [
+    {"type": "residuary", "beneficiary": "Surviving spouse", "amount": "Everything to surviving spouse"},
+    {"type": "specific_bequest", "beneficiary": "Miguel Reyes", "amount": "The Porch restaurant (if he declines, sell and add to remainder)"},
+    {"type": "pet_trust", "beneficiary": "Bowie, Prince, and future pets", "amount": "$30,000"},
+    {"type": "specific_bequest", "beneficiary": "Lisa Nakamura", "amount": "$50,000"},
+    {"type": "specific_bequest", "beneficiary": "Helen Williams", "amount": "$25,000 (if living)"},
+    {"type": "charitable", "beneficiary": "SD LGBT Center", "amount": "25% of remainder"},
+    {"type": "charitable", "beneficiary": "Trevor Project", "amount": "25% of remainder"},
+    {"type": "charitable", "beneficiary": "LGBTQ youth scholarship", "amount": "10% of remainder"},
+    {"type": "residuary", "beneficiary": "Denise Williams", "amount": "40% of remainder"}
+  ],
+  "fiduciary_designations": {
+    "trustee": {"primary": "Surviving spouse", "successor": "Lisa Nakamura", "second_successor": "Denise Williams"},
+    "marcus_dpoa_agent": {"primary": "Andre", "successor": "Denise Williams"},
+    "andre_dpoa_agent": {"primary": "Marcus", "successor": "Lisa Nakamura"},
+    "dpoa_type": "immediate"
+  },
+  "prior_legal_flags": [
+    {"item": "Basic wills from 2013", "flag": "Outdated, need revocation", "confidence_expected": "low"},
+    {"item": "Biological family inheritance rights", "flag": "Has not waived inheritance rights — trust needs explicit exclusion language", "confidence_expected": "low"},
+    {"item": "SEP IRA beneficiary", "flag": "May be Lisa from pre-marriage", "confidence_expected": "low"},
+    {"item": "Restaurant operating agreement", "flag": "No operating agreement — business continuity risk", "confidence_expected": "low"}
+  ],
+  "special_provisions": [
+    {"category": "pet_trust", "description": "$30,000 for Bowie, Prince, and future pets, Lisa primary caretaker, Denise backup"},
+    {"category": "restaurant_succession", "description": "The Porch to Miguel Reyes free and clear, conditional on acceptance"},
+    {"category": "biological_family_exclusion", "description": "Explicit trust language omitting Andre's unnamed estranged biological family"},
+    {"category": "disposition_of_remains", "description": "Cremation — Andre prefers Balboa Park, Marcus prefers Torrey Pines"},
+    {"category": "charitable_giving", "description": "60% of remainder to SD LGBT Center (25%), Trevor Project (25%), LGBTQ youth scholarship (10%)"}
+  ],
+  "critical_tests": {
+    "chosen_family": "Lisa Nakamura fills traditional family role — chosen family dynamic",
+    "biological_family_exclusion": "Andre's estranged biological family explicitly excluded with trust language",
+    "restaurant_conditional": "Miguel gets restaurant only if he wants it — conditional bequest",
+    "together_since_correction": "Marcus says 2012, Andre corrects to 2011 — correction during interview",
+    "pet_trust_future_pets": "Pet trust covers future pets, not just Bowie and Prince",
+    "immediate_dpoa_rationale": "Immediate DPOA to prevent biological family intervention",
+    "multiple_charity_percentages": "25/25/10 split among three charitable organizations"
+  }
+}

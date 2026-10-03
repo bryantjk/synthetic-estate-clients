@@ -1,0 +1,71 @@
+{
+  "profile_name": "George & Patricia Nakamura",
+  "people": [
+    {"name": "George Nakamura", "aliases": [], "relationship": "co-principal", "details": "Age 66, semi-retired CPA, married to Patricia since 1988", "roles": ["principal"]},
+    {"name": "Patricia Nakamura", "aliases": [], "relationship": "co-principal", "details": "Age 63, retired professor, married to George since 1988", "roles": ["principal"]},
+    {"name": "Christine Nakamura-Bell", "aliases": ["Christine"], "relationship": "child", "details": "Age 34, lives in San Diego, married to David Bell, twins Aiden and Olivia age 3", "roles": ["beneficiary", "successor_trustee", "successor_agent", "pet_caretaker"]},
+    {"name": "David Bell", "aliases": [], "relationship": "in_law", "details": "Christine's husband", "roles": []},
+    {"name": "Aiden", "aliases": [], "relationship": "grandchild", "details": "Age 3, Christine and David's son, twin", "roles": ["beneficiary"]},
+    {"name": "Olivia", "aliases": [], "relationship": "grandchild", "details": "Age 3, Christine and David's daughter, twin", "roles": ["beneficiary"]},
+    {"name": "Ryan Nakamura", "aliases": ["Ryan"], "relationship": "child", "details": "Age 31, lives in Portland, partner Sam (~5 years)", "roles": ["beneficiary"]},
+    {"name": "Sam", "aliases": [], "relationship": "other", "details": "Ryan's male partner, together ~5 years, not married", "roles": ["beneficiary"]},
+    {"name": "Frank Nakamura", "aliases": ["Frank"], "relationship": "sibling", "details": "Age 63, George's brother, retired banker, lives in Oceanside", "roles": ["successor_trustee"]},
+    {"name": "Margaret Chen", "aliases": ["Margaret"], "relationship": "sibling", "details": "Age 60, Patricia's sister, lives in Los Angeles", "roles": ["successor_agent"]},
+    {"name": "Koda", "aliases": [], "relationship": "other", "details": "Shiba Inu, age 6", "roles": ["pet_trust_beneficiary"]}
+  ],
+  "assets": [
+    {"description": "Kensington House", "type": "real_property", "value": 1100000, "beneficiary_status": null, "notes": "$120K mortgage remaining."},
+    {"description": "George Traditional IRA", "type": "retirement_account", "value": 890000, "beneficiary_status": "needs_updating", "notes": "FLAG: Must change from Patricia/kids to 100% four charities equally. Tax-optimized strategy — traditional IRA to charities avoids income tax on distributions."},
+    {"description": "George Roth IRA", "type": "retirement_account", "value": 180000, "beneficiary_status": "needs_updating", "notes": "Should name trust as beneficiary. Roth to family is tax-free — complements traditional IRA to charity strategy."},
+    {"description": "Patricia CalPERS Pension", "type": "retirement_account", "value_monthly": null, "beneficiary_status": null, "notes": "Monthly pension payments."},
+    {"description": "Patricia 403(b)", "type": "retirement_account", "value": 95000, "beneficiary_status": "unknown", "notes": "Beneficiary George primary, kids contingent."},
+    {"description": "Joint Savings (Union Bank)", "type": "financial_account", "value": 85000, "beneficiary_status": null, "notes": "No POD designation."},
+    {"description": "Joint Brokerage (Vanguard)", "type": "financial_account", "value": 410000, "beneficiary_status": null, "notes": "No TOD designation."},
+    {"description": "529 Plan — Aiden", "type": "financial_account", "value": 15000, "beneficiary_status": null, "notes": "Existing 529 education savings plan."},
+    {"description": "529 Plan — Olivia", "type": "financial_account", "value": 15000, "beneficiary_status": null, "notes": "Existing 529 education savings plan."},
+    {"description": "Toyota Highlander", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": null},
+    {"description": "Mazda MX-5", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": null}
+  ],
+  "distributions": [
+    {"type": "residuary", "beneficiary": "Surviving spouse", "amount": "Everything to surviving spouse first"},
+    {"type": "charitable", "beneficiary": "Japanese American National Museum", "amount": "25% of Traditional IRA (~$222,500)"},
+    {"type": "charitable", "beneficiary": "San Diego Buddhist Temple", "amount": "25% of Traditional IRA (~$222,500)"},
+    {"type": "charitable", "beneficiary": "SDSU Scholarship Fund", "amount": "25% of Traditional IRA (~$222,500)"},
+    {"type": "charitable", "beneficiary": "Doctors Without Borders", "amount": "25% of Traditional IRA (~$222,500)"},
+    {"type": "pet_trust", "beneficiary": "Koda", "amount": "$25,000"},
+    {"type": "specific_bequest", "beneficiary": "Aiden", "amount": "$50,000 to 529 plan"},
+    {"type": "specific_bequest", "beneficiary": "Olivia", "amount": "$50,000 to 529 plan"},
+    {"type": "specific_bequest", "beneficiary": "Sam", "amount": "$20,000 + personal letter"},
+    {"type": "residuary", "beneficiary": "Christine and Ryan", "amount": "Remainder equally, after both spouses deceased"}
+  ],
+  "fiduciary_designations": {
+    "trustee": {"primary": "Surviving spouse", "successor": "Christine", "second_successor": "Frank"},
+    "george_dpoa_agent": {"primary": "Patricia", "successor": "Christine"},
+    "patricia_dpoa_agent": {"primary": "George", "successor": "Margaret"},
+    "dpoa_type": "springing"
+  },
+  "prior_legal_flags": [
+    {"item": "Simple wills from early 1990s", "flag": "Severely outdated, do not reflect current wishes or assets", "confidence_expected": "low"},
+    {"item": "Traditional IRA beneficiary", "flag": "Must change from Patricia/kids to 100% four charities — dramatic change, critical action item", "confidence_expected": "high"},
+    {"item": "Roth IRA beneficiary", "flag": "May need to name trust as beneficiary for tax-free family distributions", "confidence_expected": "low"},
+    {"item": "Vanguard brokerage", "flag": "No TOD designation — needs attention", "confidence_expected": "low"},
+    {"item": "Union Bank savings", "flag": "No POD designation — needs attention", "confidence_expected": "low"}
+  ],
+  "special_provisions": [
+    {"category": "tax_optimized_ira", "description": "Traditional IRA ($890K) to four charities equally — avoids income tax on distributions. Roth IRA to family through trust — tax-free growth preserved."},
+    {"category": "sam_acknowledgment", "description": "$20,000 bequest to Sam plus personal letter. Fixed dollar amount (not percentage) because Sam and Ryan are not married and relationship may not last."},
+    {"category": "pet_trust", "description": "$25,000 for Koda (Shiba Inu), Christine primary caretaker, Ryan backup."},
+    {"category": "disposition_of_remains", "description": "George: cremation, SD Buddhist Temple columbarium. Patricia: cremation, ashes scattered at Torrey Pines."},
+    {"category": "charitable_giving", "description": "~$890K Traditional IRA split equally among Japanese American National Museum, SD Buddhist Temple, SDSU Scholarship Fund, Doctors Without Borders."}
+  ],
+  "critical_tests": {
+    "ira_tax_strategy": "Traditional IRA to charity (avoids income tax), Roth to family (tax-free) — system must capture the reasoning behind this split",
+    "four_charities_equal": "All four charities (Japanese American National Museum, SD Buddhist Temple, SDSU Scholarship Fund, Doctors Without Borders) correctly identified and split equally",
+    "sam_bequest_reasoning": "Sam gets fixed $20K amount (not percentage) because not married to Ryan — breakup concern drives structure",
+    "different_body_disposition_per_spouse": "George wants Buddhist Temple columbarium, Patricia wants Torrey Pines — different wishes per spouse",
+    "cpa_practice_not_asset": "George's CPA practice is NOT an asset to be included in the estate plan",
+    "life_insurance_lapsed_by_choice": "No life insurance — lapsed intentionally, not a gap to flag",
+    "frank_professional_qualification": "Frank (retired banker) chosen as second successor trustee — professional background is relevant context",
+    "ira_beneficiary_dramatic_change": "Current IRA beneficiary is Patricia/kids — changing to 100% charities is a dramatic shift that must be clearly documented"
+  }
+}

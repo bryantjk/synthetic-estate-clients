@@ -1,0 +1,48 @@
+{
+  "profile_name": "Tomas 'Tom' Reyes",
+  "people": [
+    {"name": "Tomas Reyes", "aliases": ["Tom", "Tom Reyes"], "relationship": "principal", "details": "Age 29, UX designer, uses preferred name Tom", "roles": ["principal"]},
+    {"name": "Ash Taylor", "aliases": ["Ash"], "relationship": "partner", "details": "Age 28, nonbinary (they/them pronouns), product manager, unmarried domestic partner", "roles": ["agent", "successor_trustee"]},
+    {"name": "Gloria Reyes", "aliases": [], "relationship": "parent", "details": "Age 57, mother, lives in National City", "roles": ["beneficiary", "trustee", "successor_agent"]},
+    {"name": "Isabella Reyes", "aliases": [], "relationship": "sibling", "details": "Age 26, sister, teacher, lives in San Diego", "roles": ["beneficiary", "successor_trustee"]},
+    {"name": "Father (unnamed)", "aliases": [], "relationship": "parent", "details": "Deceased 2019, heart attack at age 58, had no estate plan", "roles": []}
+  ],
+  "assets": [
+    {"description": "401(k)", "type": "retirement_account", "value": 62000, "beneficiary_status": "confirmed_correct", "notes": "Beneficiary is Gloria. Confirmed correct — does not need updating."},
+    {"description": "Ally Bank Savings", "type": "financial_account", "value": 28000, "beneficiary_status": null, "notes": null},
+    {"description": "Stock Options (startup)", "type": "financial_account", "value": 45000, "beneficiary_status": null, "notes": "Speculative value, startup equity, may not vest or be worth stated amount."},
+    {"description": "Cryptocurrency (Bitcoin/Ethereum)", "type": "financial_account", "value": 12000, "beneficiary_status": null, "notes": "Held on Coinbase. No traditional beneficiary designation mechanism. Requires digital access provisions."},
+    {"description": "2018 Honda Civic", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": null},
+    {"description": "UX Research Tool (digital app)", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": "Owned personally, not generating revenue."},
+    {"description": "Digital Art / NFT Portfolio", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": "Digital assets requiring access credentials."}
+  ],
+  "distributions": [
+    {"type": "residuary", "beneficiary": "Gloria Reyes", "amount": "Primary — everything"},
+    {"type": "residuary", "beneficiary": "Isabella Reyes", "amount": "Secondary — if Gloria predeceases"},
+    {"type": "residuary", "beneficiary": "Ash Taylor", "amount": "Tertiary — if both Gloria and Isabella predecease"}
+  ],
+  "fiduciary_designations": {
+    "trustee": {"primary": "Gloria", "successor": "Isabella", "second_successor": "Ash"},
+    "dpoa_agent": {"primary": "Ash", "successor": "Gloria"},
+    "dpoa_type": "immediate"
+  },
+  "prior_legal_flags": [
+    {"item": "No prior estate documents", "flag": "First-time estate plan", "confidence_expected": "high"},
+    {"item": "Father died 2019 without estate plan", "flag": "Motivating event — father died intestate at 58 with no plan", "confidence_expected": "high"},
+    {"item": "401(k) beneficiary", "flag": "Gloria confirmed as beneficiary — correctly designated, no update needed", "confidence_expected": "high"}
+  ],
+  "special_provisions": [
+    {"category": "digital_assets", "description": "Trust authorizes access to digital accounts, cryptocurrency, online assets. Password manager credentials in sealed envelope."},
+    {"category": "disposition_of_remains", "description": "Cremation, simple"}
+  ],
+  "critical_tests": {
+    "nonbinary_pronouns": "Ash uses they/them pronouns throughout — must never use he/she for Ash",
+    "preferred_vs_legal_name": "Legal name Tomas, preferred name Tom — both should be captured correctly",
+    "ash_surname_late": "Ash's last name Taylor only revealed late in interview — system must handle delayed information",
+    "distinct_fiduciary_chains": "Trustee: Gloria->Isabella->Ash. DPOA: Ash->Gloria. Must NOT be conflated.",
+    "digital_assets_informal": "Crypto access via password manager sealed envelope — informal but intentional mechanism",
+    "stock_options_uncertainty": "Startup stock options are speculative — value should be flagged as uncertain",
+    "401k_confirmed_correct": "Unlike other profiles where beneficiaries need updating, this 401(k) beneficiary is confirmed correct",
+    "immediate_dpoa_unmarried_partner": "DPOA is immediate (not springing) because Ash has no spousal presumption as unmarried partner"
+  }
+}

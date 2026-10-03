@@ -1,0 +1,62 @@
+{
+  "profile_name": "Robert 'Bobby' Fitzgerald",
+  "people": [
+    {"name": "Robert Fitzgerald", "aliases": ["Bobby", "Bobby Fitzgerald"], "relationship": "principal", "details": "Age 61, retired commercial pilot (United Airlines), lives in La Jolla, divorced Jan 2025", "roles": ["principal"]},
+    {"name": "Catherine Moore", "aliases": ["Catherine Fitzgerald", "Catherine"], "relationship": "ex-wife", "details": "Remarried, amicable relationship, 30+ year marriage, still listed as beneficiary on IRA and Merrill Lynch", "roles": []},
+    {"name": "Patrick Fitzgerald", "aliases": ["Patrick", "my son", "the one in Denver"], "relationship": "child", "details": "Age 32, lives in Denver CO, married to Julia, plays guitar", "roles": ["beneficiary", "successor_trustee"]},
+    {"name": "Julia", "aliases": [], "relationship": "in_law", "details": "Patrick's wife, no last name given", "roles": []},
+    {"name": "Erin Fitzgerald", "aliases": ["Erin"], "relationship": "child", "details": "Age 29, lives in San Diego, boyfriend David, works in project management", "roles": ["beneficiary", "trustee", "executor", "agent", "pet_caretaker"]},
+    {"name": "David", "aliases": [], "relationship": "other", "details": "Erin's boyfriend, long-term relationship", "roles": []},
+    {"name": "Colleen", "aliases": ["Colleen Byrne"], "relationship": "sibling", "details": "Age 58, lives in Boston MA, married to Brian, two daughters Amy and Bridget, very close (weekly calls)", "roles": ["successor_agent", "pet_caretaker"]},
+    {"name": "Brian", "aliases": [], "relationship": "in_law", "details": "Colleen's husband, Bobby closer to Brian than to Thomas", "roles": []},
+    {"name": "Amy", "aliases": [], "relationship": "other_relative", "details": "Colleen's daughter (Bobby's niece), age 'twenty-something'", "roles": ["beneficiary"]},
+    {"name": "Bridget", "aliases": [], "relationship": "other_relative", "details": "Colleen's daughter (Bobby's niece), age 'twenty-something'", "roles": ["beneficiary"]},
+    {"name": "Thomas Fitzgerald", "aliases": ["Thomas"], "relationship": "sibling", "details": "Age 55, lives in San Diego, strained relationship, excluded from plan (not punitive)", "roles": []},
+    {"name": "Murphy", "aliases": [], "relationship": "other", "details": "Dog, Irish Setter, age 8", "roles": ["pet_trust_beneficiary"]}
+  ],
+  "assets": [
+    {"description": "Traditional IRA", "type": "retirement_account", "value": 890000, "beneficiary_status": "needs_updating", "notes": "Rolled over from airline 401k. Beneficiary likely still Catherine."},
+    {"description": "Roth IRA", "type": "retirement_account", "value": 210000, "beneficiary_status": "unknown", "notes": "Beneficiary unknown — possibly Catherine, possibly kids."},
+    {"description": "Airline Pension", "type": "retirement_account", "value_monthly": 6800, "beneficiary_status": "governed_by_qdro", "notes": "Catherine receives survivor benefit via QDRO."},
+    {"description": "Bank of America Savings", "type": "financial_account", "value": 75000, "beneficiary_status": null, "notes": null},
+    {"description": "Merrill Lynch Brokerage", "type": "financial_account", "value": 340000, "beneficiary_status": "needs_updating", "notes": "Individual account from divorce. Beneficiary likely still Catherine."},
+    {"description": "Whole Life Insurance", "type": "life_insurance", "value_face": 250000, "value_cash": 85000, "beneficiary_status": "confirmed_correct", "notes": "Patrick and Erin equally. Bobby is sure."},
+    {"description": "2022 Ford F-150", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": null},
+    {"description": "Vintage Guitar Collection", "type": "personal_property", "value": 60000, "beneficiary_status": null, "notes": "15-16 instruments incl. 1963 Strat, 1970s Gibsons. Specifically bequeathed to Patrick."}
+  ],
+  "distributions": [
+    {"type": "specific_bequest", "beneficiary": "Patrick", "amount": "Guitar collection"},
+    {"type": "pet_trust", "beneficiary": "Murphy", "amount": "$40,000"},
+    {"type": "specific_bequest", "beneficiary": "Amy", "amount": "$10,000"},
+    {"type": "specific_bequest", "beneficiary": "Bridget", "amount": "$10,000"},
+    {"type": "charitable", "beneficiary": "ALPA charitable foundation", "amount": "$20,000"},
+    {"type": "residuary", "beneficiary": "Patrick and Erin", "amount": "50/50 split, outright"}
+  ],
+  "fiduciary_designations": {
+    "trustee": {"primary": "Erin", "successor": "Patrick"},
+    "dpoa_agent": {"primary": "Erin", "successor": "Colleen"},
+    "dpoa_type": "springing"
+  },
+  "prior_legal_flags": [
+    {"item": "Prior joint revocable trust ~2005", "flag": "May not have been formally revoked in divorce", "confidence_expected": "low"},
+    {"item": "IRA beneficiary", "flag": "Almost certainly still lists Catherine", "confidence_expected": "low"},
+    {"item": "Merrill Lynch beneficiary", "flag": "Almost certainly still lists Catherine", "confidence_expected": "low"},
+    {"item": "Roth IRA beneficiary", "flag": "Unknown — needs verification", "confidence_expected": "low"},
+    {"item": "QDRO", "flag": "Bobby unclear on details, may not have paperwork", "confidence_expected": "low"},
+    {"item": "Divorce judgment", "flag": "May not address revocation of 2005 trust", "confidence_expected": "low"}
+  ],
+  "special_provisions": [
+    {"category": "pet_trust", "description": "$40k for Murphy, Erin primary caretaker, Colleen backup"},
+    {"category": "charitable_giving", "description": "$20k to ALPA charitable foundation"},
+    {"category": "disposition_of_remains", "description": "Cremation, ashes scattered at sea off San Diego"},
+    {"category": "legacy_letter", "description": "Personal letter to children, kept with trust documents"}
+  ],
+  "critical_tests": {
+    "reference_resolution": "my son / Patrick / the one in Denver must resolve to one person",
+    "distinct_successor_chains": "Trustee: Erin→Patrick. DPOA: Erin→Colleen. Must NOT be conflated.",
+    "prior_trust_flagged": "Prior trust should be flagged as high-priority issue requiring document review",
+    "qdro_low_confidence": "QDRO details should be low confidence",
+    "roth_beneficiary_unknown": "Roth IRA beneficiary should be flagged as unknown, not guessed",
+    "niece_ages_vague": "Amy and Bridget ages should be approximate ('twenty-something'), not invented"
+  }
+}

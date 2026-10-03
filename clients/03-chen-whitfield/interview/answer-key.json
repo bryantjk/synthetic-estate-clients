@@ -1,0 +1,61 @@
+{
+  "profile_name": "Sandra Chen & Diane Whitfield",
+  "people": [
+    {"name": "Sandra Chen", "aliases": ["Sandra"], "relationship": "principal", "details": "Age 56, semi-retired marketing exec, co-principal", "roles": ["principal"]},
+    {"name": "Diane Whitfield", "aliases": ["Diane"], "relationship": "principal", "details": "Age 52, high school principal, co-principal, married 2014", "roles": ["principal"]},
+    {"name": "Tyler Chen", "aliases": ["Tyler"], "relationship": "child", "details": "Sandra's son, age 28, lives in LA, married to Rebecca, daughter Lily age 2", "roles": ["beneficiary"]},
+    {"name": "Rebecca", "aliases": [], "relationship": "in_law", "details": "Tyler's wife", "roles": []},
+    {"name": "Lily", "aliases": [], "relationship": "other_relative", "details": "Granddaughter, age 2, Tyler and Rebecca's daughter", "roles": ["beneficiary"]},
+    {"name": "Megan Chen", "aliases": ["Megan"], "relationship": "child", "details": "Sandra's daughter, age 25, lives in San Diego", "roles": ["beneficiary", "successor_trustee", "successor_agent", "pet_caretaker"]},
+    {"name": "Sandra's prior partner", "aliases": [], "relationship": "other", "details": "Deceased 2003, motivates protecting Diane", "roles": []},
+    {"name": "David Chen", "aliases": ["David"], "relationship": "sibling", "details": "Sandra's brother, age 60, San Francisco", "roles": []},
+    {"name": "Karen Whitfield-Jones", "aliases": ["Karen"], "relationship": "sibling", "details": "Diane's sister, age 49, Portland", "roles": ["successor_trustee", "successor_agent", "pet_caretaker"]},
+    {"name": "Mochi", "aliases": [], "relationship": "other", "details": "Cat, age 6", "roles": ["pet_trust_beneficiary"]},
+    {"name": "Sushi", "aliases": [], "relationship": "other", "details": "Cat, age 6", "roles": ["pet_trust_beneficiary"]}
+  ],
+  "assets": [
+    {"description": "Condo Hillcrest", "type": "real_property", "value": 820000, "mortgage": 0, "beneficiary_status": null, "notes": "Free and clear."},
+    {"description": "Sandra Traditional IRA", "type": "retirement_account", "value": 680000, "beneficiary_status": "needs_updating", "notes": "Beneficiary needs verification. 50% to charities, 50% to trust per plan."},
+    {"description": "Sandra Fidelity Brokerage", "type": "financial_account", "value": 275000, "beneficiary_status": "needs_updating", "notes": "FLAG: Currently lists Tyler as sole beneficiary — conflicts with distribution plan."},
+    {"description": "Diane CalSTRS Pension", "type": "retirement_account", "value": 340000, "beneficiary_status": null, "notes": null},
+    {"description": "Joint Savings USAA", "type": "financial_account", "value": 120000, "beneficiary_status": null, "notes": null},
+    {"description": "Art Collection", "type": "personal_property", "value": 40000, "beneficiary_status": null, "notes": "Specifically bequeathed to Megan."},
+    {"description": "Subaru Outback", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": null},
+    {"description": "Toyota Prius", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": null}
+  ],
+  "distributions": [
+    {"type": "residuary", "beneficiary": "Surviving spouse", "amount": "Everything to surviving spouse"},
+    {"type": "specific_bequest", "beneficiary": "Megan", "amount": "Art collection (~$40,000)"},
+    {"type": "pet_trust", "beneficiary": "Mochi and Sushi", "amount": "$10,000"},
+    {"type": "charitable", "beneficiary": "SD Humane Society", "amount": "$25,000"},
+    {"type": "charitable", "beneficiary": "SD LGBT Center and Hillcrest AIDS Foundation", "amount": "50% of Sandra IRA split equally"},
+    {"type": "residuary", "beneficiary": "Remaining 50% IRA to trust", "amount": "50% of Sandra IRA"},
+    {"type": "residuary", "beneficiary": "Megan", "amount": "60% of trust remainder"},
+    {"type": "residuary", "beneficiary": "Tyler", "amount": "25% of trust remainder"},
+    {"type": "residuary", "beneficiary": "Lily", "amount": "15% of trust remainder, education fund"}
+  ],
+  "fiduciary_designations": {
+    "trustee": {"primary": "Surviving spouse", "successor": "Megan", "second_successor": "Karen"},
+    "sandra_dpoa_agent": {"primary": "Diane", "successor": "Megan"},
+    "diane_dpoa_agent": {"primary": "Sandra", "successor": "Karen"},
+    "dpoa_type": "immediate"
+  },
+  "prior_legal_flags": [
+    {"item": "Basic wills from 2010", "flag": "Done by law student, outdated, need revocation", "confidence_expected": "low"},
+    {"item": "Fidelity brokerage beneficiary", "flag": "Lists Tyler as sole beneficiary — conflicts with distribution plan", "confidence_expected": "low"},
+    {"item": "IRA beneficiary", "flag": "Needs verification and coordination with charitable split", "confidence_expected": "low"}
+  ],
+  "special_provisions": [
+    {"category": "pet_trust", "description": "$10,000 for Mochi and Sushi, Megan primary caretaker, Karen backup"},
+    {"category": "charitable_giving", "description": "50% of Sandra IRA to SD LGBT Center and Hillcrest AIDS Foundation equally; $25,000 to SD Humane Society"},
+    {"category": "disposition_of_remains", "description": "Cremation, ashes mixed together and scattered at Torrey Pines"}
+  ],
+  "critical_tests": {
+    "fidelity_beneficiary_conflict": "Tyler sole beneficiary discovered during interview — conflicts with plan",
+    "unequal_distribution_reasoning": "60/25/15 split among Megan, Tyler, Lily with clear rationale",
+    "immediate_dpoa_rationale": "Sandra's health scares justify immediate (not springing) DPOA",
+    "ira_tax_optimization": "50% of IRA to charity avoids income tax on that portion",
+    "prior_partner_context": "2003 death of prior partner motivates protecting Diane",
+    "ashes_mixed": "Unusual request — ashes mixed together, not kept separate"
+  }
+}

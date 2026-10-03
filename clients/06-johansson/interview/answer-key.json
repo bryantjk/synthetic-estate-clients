@@ -1,0 +1,60 @@
+{
+  "profile_name": "Linda Johansson",
+  "people": [
+    {"name": "Linda Johansson", "aliases": ["Linda"], "relationship": "principal", "details": "Age 71, retired teacher, widowed", "roles": ["principal"]},
+    {"name": "Erik Johansson", "aliases": ["Erik"], "relationship": "spouse", "details": "Deceased husband, died 2021, pancreatic cancer", "roles": []},
+    {"name": "Anna Johansson-Torres", "aliases": ["Anna"], "relationship": "child", "details": "Daughter, age 46, lives in Coronado, married to Miguel Torres", "roles": ["beneficiary", "successor_trustee", "trustee", "agent"]},
+    {"name": "Miguel Torres", "aliases": ["Miguel"], "relationship": "in_law", "details": "Anna's husband, CPA", "roles": ["successor_trustee", "successor_agent"]},
+    {"name": "Emma Torres", "aliases": ["Emma"], "relationship": "other_relative", "details": "Granddaughter, age 17, Anna and Miguel's daughter", "roles": ["beneficiary"]},
+    {"name": "Jack Torres", "aliases": ["Jack"], "relationship": "other_relative", "details": "Grandson, age 14, Anna and Miguel's son", "roles": ["beneficiary"]},
+    {"name": "Peter Johansson", "aliases": ["Peter"], "relationship": "child", "details": "Son, age 43, Seattle, alcohol use disorder, sober 18 months", "roles": ["beneficiary"]},
+    {"name": "Whiskers", "aliases": [], "relationship": "other", "details": "Cat, age 12", "roles": []}
+  ],
+  "assets": [
+    {"description": "Coronado House", "type": "real_property", "value": 1900000, "mortgage": 0, "beneficiary_status": null, "notes": "FLAG: Titled in Linda's name individually, removed from trust, needs re-titling into trust."},
+    {"description": "Traditional IRA", "type": "retirement_account", "value": 480000, "beneficiary_status": "needs_updating", "notes": "FLAG: Lists Peter and Anna equally — may conflict with discretionary trust structure for Peter."},
+    {"description": "Savings US Bank", "type": "financial_account", "value": 110000, "beneficiary_status": null, "notes": null},
+    {"description": "Brokerage Schwab", "type": "financial_account", "value": 320000, "beneficiary_status": null, "notes": null},
+    {"description": "Social Security", "type": "other", "value_monthly": 3200, "beneficiary_status": null, "notes": null},
+    {"description": "2020 Lexus RX", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": null},
+    {"description": "Erik's woodworking tools", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": "Sentimental — based on shared woodworking history with Erik. Specifically bequeathed to Peter."},
+    {"description": "Scandinavian furniture", "type": "personal_property", "value": null, "beneficiary_status": null, "notes": "Specifically bequeathed to Anna."}
+  ],
+  "distributions": [
+    {"type": "specific_bequest", "beneficiary": "Peter", "amount": "Erik's woodworking tools"},
+    {"type": "specific_bequest", "beneficiary": "Anna", "amount": "Scandinavian furniture"},
+    {"type": "specific_bequest", "beneficiary": "Anna", "amount": "$5,000 for Whiskers care (informal, NOT pet trust)"},
+    {"type": "specific_bequest", "beneficiary": "Emma", "amount": "$20,000 education"},
+    {"type": "specific_bequest", "beneficiary": "Jack", "amount": "$20,000 education"},
+    {"type": "charitable", "beneficiary": "First Lutheran Church Coronado", "amount": "$25,000"},
+    {"type": "specific_bequest", "beneficiary": "Anna", "amount": "Coronado house"},
+    {"type": "residuary", "beneficiary": "Anna", "amount": "50% outright"},
+    {"type": "residuary", "beneficiary": "Peter", "amount": "50% in discretionary trust, HEMS + broad discretion, NO sobriety testing. Remainder to Emma and Jack if Peter predeceases."}
+  ],
+  "fiduciary_designations": {
+    "trustee": {"primary": "Linda (during lifetime)", "successor": "Anna", "second_successor": "Miguel"},
+    "peter_trust_trustee": "Anna (conflict acknowledged)",
+    "dpoa_agent": {"primary": "Anna", "successor": "Miguel"},
+    "dpoa_type": "springing"
+  },
+  "prior_legal_flags": [
+    {"item": "Existing 2015 joint revocable trust", "flag": "Client wants RESTATEMENT, not revocation — specific legal distinction", "confidence_expected": "high"},
+    {"item": "Coronado house", "flag": "Removed from trust, needs re-titling into trust — critical action item", "confidence_expected": "high"},
+    {"item": "IRA beneficiary designation", "flag": "Lists Peter and Anna equally — may conflict with discretionary trust structure for Peter", "confidence_expected": "low"}
+  ],
+  "special_provisions": [
+    {"category": "discretionary_trust", "description": "Peter's trust: HEMS + broad discretion, NO sobriety testing (emphatic rejection), Anna as conflicted trustee (acknowledged)"},
+    {"category": "informal_pet_care", "description": "$5,000 to Anna for Whiskers care — deliberately NOT a formal pet trust (cat is elderly)"},
+    {"category": "charitable_giving", "description": "$25,000 to First Lutheran Church Coronado"},
+    {"category": "disposition_of_remains", "description": "Burial at Fort Rosecrans National Cemetery next to Erik, plot already reserved"}
+  ],
+  "critical_tests": {
+    "trust_restatement_not_revocation": "Specific legal distinction — restatement of 2015 trust, not revocation and new trust",
+    "house_outside_trust_flag": "Coronado house removed from trust — critical action item to re-title",
+    "no_sobriety_testing": "Emphatic rejection of sobriety testing for Peter's trust distributions",
+    "anna_trustee_conflict": "Anna serves as trustee of Peter's discretionary trust — acknowledged conflict of interest",
+    "ira_trust_coordination": "IRA beneficiary designation must align with discretionary trust structure for Peter",
+    "informal_pet_care_vs_trust": "Deliberate choice to do informal $5K gift, not formal pet trust — cat is elderly",
+    "erik_tools_emotional_context": "Woodworking tools bequest based on shared father-son history with Erik"
+  }
+}
