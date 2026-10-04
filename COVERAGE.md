@@ -4,6 +4,8 @@ The nine were chosen to span a demographic range and a range of legal shapes, no
 
 ## The nine
 
+All nine are tier 1, the foundational tier, in `clients/tier-1-foundational/`. Tiers 2 to 4 have no clients yet; their READMEs under `clients/` say which of the gaps below each tier should fill first.
+
 | # | Client | Shape | Net worth |
 |---|---|---|---|
 | 01 | Maria Elena Vega | Single mother, straightforward plan | $730K |
@@ -40,20 +42,20 @@ The nine were chosen to span a demographic range and a range of legal shapes, no
 | Professional fiduciary, trust protector | 09 |
 | Immediate versus springing power of attorney | immediate: 03, 05, 07; springing: the rest |
 | Non-Western names, cross-cultural families | 02, 03, 07, 08 |
-| Net worth | $150K to $3.3M |
+| Net worth | $150K to $3.3M (all tier 1) |
 
 ## What the set does not cover (gaps)
 
 These are the shapes a tenth, eleventh and twelfth client would most usefully add. None of the nine has:
 
 - **a special-needs beneficiary**, where a share must be held in a trust that preserves public benefits
-- **a non-citizen spouse**, where the marital deduction needs a qualified domestic trust
+- **a non-citizen spouse**, where the marital deduction needs a qualified domestic trust (any tier; most natural at tier 4)
 - **a second marriage with children on both sides**, where the survivor's and the first family's interests must both be protected
-- **an estate above the federal exemption**, where tax planning drives the structure rather than decorating it
-- **a business with partners**, where a buy-sell agreement and the operating agreement govern what the trust may hold
+- **an estate above the federal exemption**, where tax planning drives the structure rather than decorating it (a tier 3 client)
+- **a business with partners**, where a buy-sell agreement and the operating agreement govern what the trust may hold (tier 2 or 3)
 - **a client with diminished or contested capacity**, or an interview where a family member answers for the client
 - **a client over 85**, or one planning from a hospital bed
-- **real property in more than one state**, where ancillary probate is the risk
+- **real property in more than one state**, where ancillary probate is the risk (tier 2 upward)
 - **a family farm or ranch**, or other property whose value is in keeping it together
 - **a client who speaks through an interpreter**, or whose first language is not English
 - **a prior plan from another firm's drafting system**, with its own vocabulary, to be restated

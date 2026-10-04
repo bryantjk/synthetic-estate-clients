@@ -1,18 +1,19 @@
 ---
-client: Tomás Reyes
-number: 7
+client: Patricia and George Nakamura
+number: 8
+tier: 1
 jurisdiction: California, United States
-shape: Single young professional, simple plan, first-time client
-net_worth: $150K
+shape: Married couple nearing retirement, charitable legacy
+net_worth: $3.3M
 ---
 
-# 07. Tomás Reyes
+# 08. Patricia and George Nakamura
 
-**Single young professional, simple plan, first-time client.** The simplest end of the range: a nonbinary partner, cryptocurrency and app IP, an agent who is not the primary beneficiary, urgency from a parent who died without a plan.
+**Married couple nearing retirement, charitable legacy.** Tax-aware giving (IRA to charity, Roth to family), a partner acknowledged outside the documents, different disposition wishes per spouse, outdated wills, a CPA's vocabulary.
 
 ## Why this client exists
 
-Tests the youngest and simplest end of the client spectrum, but with meaningful nuances. The unmarried partner with nonbinary identity tests the system's pronoun and relationship handling. Digital assets (crypto, app IP) are an increasingly common concern. The emotional motivation (father's death without a plan) is context the system should capture as it informs the urgency and priorities. Also tests the scenario where the DPOA agent is different from the primary beneficiary --- Ash is the agent but Gloria is the primary beneficiary.
+Tests sophisticated tax planning awareness (IRA to charity, Roth to family), the desire to acknowledge a non-legally-connected partner (Sam) in a limited way, different body disposition wishes for each spouse, outdated wills that need revocation, and IRA beneficiary designations that conflict with the new plan. George's CPA background means the conversation may include more technical financial language that the capture engine needs to handle. Also tests the situation where a client wants to express something (feelings about Sam) outside the legal document.
 
 ## What is here
 

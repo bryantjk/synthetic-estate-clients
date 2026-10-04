@@ -1,18 +1,19 @@
 ---
-client: Robert "Bobby" Fitzgerald
-number: 4
+client: Raymond "Ray" Delacroix
+number: 9
+tier: 1
 jurisdiction: California, United States
-shape: Recently divorced man, prior trust complications
-net_worth: $1.7M
+shape: Older single gay man, limited support network, professional fiduciary
+net_worth: $1.3M
 ---
 
-# 04. Robert "Bobby" Fitzgerald
+# 09. Raymond "Ray" Delacroix
 
-**Recently divorced man, prior trust complications.** An unrevoked prior trust of uncertain status, beneficiary designations that contradict current wishes, a fuzzily remembered QDRO, a deliberately excluded sibling.
+**Older single gay man, limited support network, professional fiduciary.** No viable personal fiduciary: a professional fiduciary to be named, a trust protector over them, compensation and replacement terms, a named collection as a bequest, institutions as backup fiduciaries.
 
 ## Why this client exists
 
-Directly mirrors the complexity of Client 1 from the real client examples. Prior trust with uncertain status, beneficiary designations that conflict with current wishes, a divorce where the trust wasn't clearly addressed, fuzzy recollection of legal details (QDRO), a deliberately excluded sibling with nuanced reasoning, and a strained family relationship. The capture engine needs to flag multiple potential legal issues: the unrevoked prior trust, the outdated beneficiary designations, and the unresolved QDRO situation.
+This profile tests a critical scenario: a client with no viable personal candidates for fiduciary roles. The capture engine must recognize that the professional fiduciary is not yet selected (a "to be named" placeholder), handle the trust protector concept (which adds a supervisory layer over the professional fiduciary), and capture the specific compensation and replacement provisions that are unique to professional fiduciary arrangements. The emotional backstory about Walter is important context the system should capture, as it explains the urgency and specific concerns driving the plan. Also tests multiple beneficiary designations that are either missing or outdated, the concept of a named collection as a bequest, and institutional beneficiaries serving in backup fiduciary roles.
 
 ## What is here
 

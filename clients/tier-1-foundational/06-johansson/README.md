@@ -1,18 +1,19 @@
 ---
-client: Patricia and George Nakamura
-number: 8
+client: Linda Johansson
+number: 6
+tier: 1
 jurisdiction: California, United States
-shape: Married couple nearing retirement, charitable legacy
-net_worth: $3.3M
+shape: Widowed grandmother, multi-generational planning
+net_worth: $2.8M
 ---
 
-# 08. Patricia and George Nakamura
+# 06. Linda Johansson
 
-**Married couple nearing retirement, charitable legacy.** Tax-aware giving (IRA to charity, Roth to family), a partner acknowledged outside the documents, different disposition wishes per spouse, outdated wills, a CPA's vocabulary.
+**Widowed grandmother, multi-generational planning.** A discretionary trust for a child with substance-use issues without punitive language, restatement versus revocation, a property that fell out of the trust, IRA designations to align.
 
 ## Why this client exists
 
-Tests sophisticated tax planning awareness (IRA to charity, Roth to family), the desire to acknowledge a non-legally-connected partner (Sam) in a limited way, different body disposition wishes for each spouse, outdated wills that need revocation, and IRA beneficiary designations that conflict with the new plan. George's CPA background means the conversation may include more technical financial language that the capture engine needs to handle. Also tests the situation where a client wants to express something (feelings about Sam) outside the legal document.
+Tests a complex emotional scenario: a parent wanting to protect a child with substance use issues without being punitive. The discretionary trust for Peter is a nuanced provision. The system must capture Linda's strong feelings about not including sobriety testing language while still creating a structure that protects Peter. Also tests trust restatement vs. revocation, a property that fell out of the trust, IRA beneficiary designation alignment, and multi-generational distributions with specific bequests.
 
 ## What is here
 

@@ -1,18 +1,19 @@
 ---
-client: Linda Johansson
-number: 6
+client: Marcus and Andre Williams-Park
+number: 5
+tier: 1
 jurisdiction: California, United States
-shape: Widowed grandmother, multi-generational planning
-net_worth: $2.8M
+shape: Married gay couple, no children, charitable focus
+net_worth: $1.5M
 ---
 
-# 06. Linda Johansson
+# 05. Marcus and Andre Williams-Park
 
-**Widowed grandmother, multi-generational planning.** A discretionary trust for a child with substance-use issues without punitive language, restatement versus revocation, a property that fell out of the trust, IRA designations to align.
+**Married gay couple, no children, charitable focus.** Chosen family, estrangement from blood relatives with legal consequences, a small business succession, heavy charitable giving, a domestic partnership followed by marriage.
 
 ## Why this client exists
 
-Tests a complex emotional scenario: a parent wanting to protect a child with substance use issues without being punitive. The discretionary trust for Peter is a nuanced provision. The system must capture Linda's strong feelings about not including sobriety testing language while still creating a structure that protects Peter. Also tests trust restatement vs. revocation, a property that fell out of the trust, IRA beneficiary designation alignment, and multi-generational distributions with specific bequests.
+Tests chosen family dynamics (Lisa's role), estrangement with legal implications, a small business succession concern, significant charitable giving, and the interplay between a domestic partnership and subsequent marriage. The biological family concern is an important capture point --- the system should flag that Andre may want explicit language addressing the exclusion of his biological relatives, even though he didn't use the word "disinherit." Also tests immediate DPOA and the concept of future pets in the pet trust.
 
 ## What is here
 

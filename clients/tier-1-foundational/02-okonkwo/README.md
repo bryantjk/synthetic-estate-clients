@@ -1,18 +1,19 @@
 ---
-client: Raymond "Ray" Delacroix
-number: 9
+client: James and Priya Okonkwo
+number: 2
+tier: 1
 jurisdiction: California, United States
-shape: Older single gay man, limited support network, professional fiduciary
-net_worth: $1.3M
+shape: Married couple, young family, standard plan
+net_worth: $2.4M
 ---
 
-# 09. Raymond "Ray" Delacroix
+# 02. James and Priya Okonkwo
 
-**Older single gay man, limited support network, professional fiduciary.** No viable personal fiduciary: a professional fiduciary to be named, a trust protector over them, compensation and replacement terms, a named collection as a bequest, institutions as backup fiduciaries.
+**Married couple, young family, standard plan.** The standard couple: joint planning with two sets of agents, a pet trust, keeping each spouse's family on the right side, Nigerian and Indian naming conventions.
 
 ## Why this client exists
 
-This profile tests a critical scenario: a client with no viable personal candidates for fiduciary roles. The capture engine must recognize that the professional fiduciary is not yet selected (a "to be named" placeholder), handle the trust protector concept (which adds a supervisory layer over the professional fiduciary), and capture the specific compensation and replacement provisions that are unique to professional fiduciary arrangements. The emotional backstory about Walter is important context the system should capture, as it explains the urgency and specific concerns driving the plan. Also tests multiple beneficiary designations that are either missing or outdated, the concept of a named collection as a bequest, and institutional beneficiaries serving in backup fiduciary roles.
+The classic married-with-kids scenario. Tests the system's handling of joint planning (two DPOAs, two sets of agent designations), a pet trust, and cross-cultural family naming conventions. The system needs to correctly associate each spouse with their respective family members and agent designations without confusing who belongs to which side.
 
 ## What is here
 

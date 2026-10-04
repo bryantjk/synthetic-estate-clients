@@ -1,18 +1,19 @@
 ---
-client: Maria Elena Vega
-number: 1
+client: Robert "Bobby" Fitzgerald
+number: 4
+tier: 1
 jurisdiction: California, United States
-shape: Single mother, straightforward plan
-net_worth: $730K
+shape: Recently divorced man, prior trust complications
+net_worth: $1.7M
 ---
 
-# 01. Maria Elena Vega
+# 04. Robert "Bobby" Fitzgerald
 
-**Single mother, straightforward plan.** Guardianship, minor beneficiaries with age conditions, the guardian/trustee distinction, and excluding an absent parent without naming him as disinherited.
+**Recently divorced man, prior trust complications.** An unrevoked prior trust of uncertain status, beneficiary designations that contradict current wishes, a fuzzily remembered QDRO, a deliberately excluded sibling.
 
 ## Why this client exists
 
-Straightforward single-parent scenario. Tests the system's ability to handle guardianship designations, minor beneficiaries with age-based conditions, and the distinction between guardian and trustee roles. The absent father adds a nuance --- the system should capture the client's explicit wish to exclude someone without that person being a formal "disinherited" party.
+Directly mirrors the complexity of Client 1 from the real client examples. Prior trust with uncertain status, beneficiary designations that conflict with current wishes, a divorce where the trust wasn't clearly addressed, fuzzy recollection of legal details (QDRO), a deliberately excluded sibling with nuanced reasoning, and a strained family relationship. The capture engine needs to flag multiple potential legal issues: the unrevoked prior trust, the outdated beneficiary designations, and the unresolved QDRO situation.
 
 ## What is here
 
@@ -25,6 +26,5 @@ Straightforward single-parent scenario. Tests the system's ability to handle gua
 | `interview/answer-key.json` | the same, structured, for automated scoring | derived from `answer-key.md` |
 | `intake.md` | what the client returned on the follow-up form after the interview. Values not said in the interview are tagged `[SYNTH]` | transcript plus intake is the complete data set a finished plan should reflect |
 | `documents/` | the papers a real client would bring (deeds, statements, designation forms, prior instruments). **Empty to start**; its README says what belongs | to be created |
-| `recordings/` | one scripted run of this interview, spoken aloud: the mixed room audio and the utterance-level transcript as captured |
 
 Everything is invented. Addresses, account numbers and institutions are fabricated and should not match any real person or account.

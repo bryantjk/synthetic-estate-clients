@@ -1,6 +1,7 @@
 ---
 client: Sandra and Diane Chen-Whitfield
 number: 3
+tier: 1
 jurisdiction: California, United States
 shape: Married lesbian couple, blended family, complex distributions
 net_worth: $2.3M

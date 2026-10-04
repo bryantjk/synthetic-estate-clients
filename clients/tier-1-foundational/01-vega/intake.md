@@ -2,7 +2,7 @@
 
 **Profile 1 / Vega**
 **Source:** Online intake form returned by client after initial interview, plus follow-up email confirming beneficiary designations.
-**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `transcripts/clean_transcripts/transcript_01_vega.md` and `answer_keys/answer_key_01_vega.md`, this represents the complete data set the documents should reflect.
+**Use:** Ground-truth answer key for evaluating generated estate-planning documents. Combined with `interview/transcript-dialogue-only.md` and `interview/answer-key.md`, this represents the complete data set the documents should reflect.
 
 > **Convention.** Values that appear in the transcript are repeated here for one-stop reference. Values that did **not** appear in the transcript and were synthesized for testing are tagged `[SYNTH]` so they can be edited or replaced. Phone numbers use the (619) 555-XXXX reservation. Addresses and account details are fabricated and should not match real persons or institutions.
 
